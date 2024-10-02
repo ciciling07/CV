@@ -1,295 +1,414 @@
-% --- LaTeX CV Template - S. Venkatraman ---
+\documentclass[12pt]{resume}    
+\usepackage[left=0.5in,top=0.75in,right=0.5in,bottom=0.75in]{geometry} 
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
 
-% Set document class and font size
-\documentclass[letterpaper, 11pt]{article}
-\usepackage[utf8]{inputenc}
-
-% Package imports
-\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
-
-% --- Page layout settings ---
-
-% Set page margins
-\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
-
-% Set line spacing
-\renewcommand{\baselinestretch}{1.15}
-
-% --- Page formatting ---
-
-% Set link colors
-\usepackage[dvipsnames]{xcolor}
-\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
-
-% Set font to Libertine, including math support
-\usepackage{libertine}
-\usepackage[libertine]{newtxmath}
-
-% Remove page numbering
-\pagenumbering{gobble}
-
-% --- Document starts here ---
+\name{Chen(Cici) Ling}
+% \address{Boston, Massachusetts}
+\address{ 
+% (+1) 857-763-7756        
+\href{https://ciciling.com}{ciciling.com}           
+ccling@iu.edu 
+% \href{mailto:ccling@bu.edu}{Email} \\ 
+% \href{https://twitter.com/ciciling07}{Twitter} \\
+% \href{https://ciciling.com/}{Website} \\
+% \href{https://github.com/ciciling07}{Github} \\
+% \href{https://www.linkedin.com/in/chen-ling-1a7b276a/}{Linkedin} \\
+% \href{https://scholar.google.com/citations?user=i9KCc1cAAAAJ&hl=en}{Google Scholar}
+}
 
 \begin{document}
-
-% Name and date of last update to this document
-\noindent{\Huge{Chen Ling}
-\hfill{\it\footnotesize Updated \today}}
-
-% --- Contact information and other items ---
-
-\vspace{0.4cm} 
 \begin{center}
-\begin{tabular}{lll}
-% Line 1: Email, GitHub, office location
- ccling@bu.edu      &
-\hspace{0.4cm} ciciling.com   &
-\hspace{0.4cm} 	+1 857-763-7756 \\
-
-\href{https://scholar.google.com/citations?user=XQHXhZ4AAAAJ&hl=en&oi=sra} {Google Scholar}      &
-\hspace{0.4cm} \href{https://www.linkedin.com/in/chen-ling-1a7b276a/} {LinkedIn}   &
-\hspace{0.4cm} 	\href{https://github.com/ciciling07} {Github}\\
-
-% % Line 2: Phone number, LinkedIn, citizenship
-% \textbf{Phone}: (314) 159-2654   & 
-% \hspace{0.55in} \textbf{LinkedIn}: //LinkedIn-URL   & 
-% \hspace{0.4in} \textbf{Citizenship}: Country 
-\end{tabular}
+\textbf{Assistant Professor in the\\
+Luddy School of Informatics, Computing, and Engineering\\
+at Indiana University Bloomington}
 \end{center}
 
-% --- Start the two-column table storing the main content ---
-
-% Set spacing between columns
-\setlength{\tabcolsep}{8pt}
-
-% Set the width of each column
-\begin{longtable}{p{1.3in}p{4.8in}}
-
-% --- Section: Research interests ---
-
-\nohyphens{\color{OliveGreen}{Research interests}}
-& Memes, online communities, online abuse, computational social science.\\
-& \\
-
-% --- Section: Education ---
-
-\color{OliveGreen}{Education} 
-& \textbf{Ph.D., Computer Engineering} \hfill September 2019 -- Expected May 2024 \\ 
-& Boston University, {\it GPA: 4.0/4.0} \hfill Boston, MA \\
-& Advisor: Prof. Gianluca Stringhini\\
-& \\
-
-& \textbf{M.S., Computer Science} \hfill May 2018 -- August 2019 \\
-& University of Illinois Urbana-Champaign, {\it GPA: 3.70/4.0}  \hfill Urbana, IL\\
-& \\
-
-& \textbf{B.A., Art History} \hfill August 2011 -- July 2015\\
-& Tsinghua University {\it GPA: 88/100} \hfill Beijing, China\\
-& \\
-
-{\color{OliveGreen}{Research Funding}}
-& \href{https://research.facebook.com/blog/2022/2/announcing-the-recipients-of-the-2022-meta-phd-research-fellowship/}{Meta PhD Research Fellowship} (\$42,000)\hfill 2022\\
-& \href{https://research.facebook.com/blog/2021/12/announcing-the-recipients-of-instagram-research-awards-on-safety-and-community-health/}{ Instagram research awards on safety and community health: Towards proactive moderation of coordinated harassment on Instagram} (\$50,000 – Research Gift)\hfill 2021\\
-& Hariri Graduate Student Fellowship (\$5,000) \hfill 2021\\
-& Max Planck Institute Fellowship (\$6,300) \hfill 2021\\
-& Boston University Distinguished Computer Engineering Fellowship \hfill 2019\\
-& Tsinghua X-lab Entrepreneurship Fund (\$7,500) \hfill2014\\
-& China Spark Research Training Program Grant (\$1,500) \hfill 2013\\
-& National Undergraduate Academic Science and Technology Race Fund (\$1,500) \hfill2013\\
-& Tsinghua Student Research Training Program Grant (\$1,000) \hfill2012\\
-
-% --- Section: Talks and tutorials ---
-
-{\color{OliveGreen}{Honors \& Awards}}
-& IEEE S\&P Student Registration Grant (\$150) \hfill 2021\\
-& National Undergraduate Academic Science and Technology Race Challenge Cup Award (\$1,500)\hfill 2015\\
-& Tsinghua Scholarship for Comprehensive Excellence (\$1,000)\hfill2014\\
-& National Innovation and Entrepreneurship Association (\$1,500) \hfill2011\\
-
-% --- Uncomment the next few lines if you want to include some courses ---
-%& \textbf{Selected coursework}
-%\begin{itemize}[noitemsep,leftmargin=*]
-%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
-%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
-%\end{itemize} \\
-
-% --- Section: Awards, scholarships, etc. ---
-% --- Note: section title is spread over two lines ---
-
-% {\color{OliveGreen}{Honors and}} 
-% & Name of award 1 (Organization that gave you the award) \hfill 2020\\
-% {\color{OliveGreen}{scholarships}} 
-% & Name of award 2 (Organization that gave you the award)\hfill 2019 \\
-% & Name of award 3 (Organization that gave you the award) \hfill 2018 \\
-% & \\
-
-% --- Section: Publications ---
-\nohyphens{\color{OliveGreen}{Publications}}
-& * = equal contribution\\
-&[12]. \textbf{Ling, C.}, Gummadi, K. P., \& Zannettou, S. (2022), " Learn the Facts About COVID-19": Analyzing the Use of Warning Labels on TikTok Videos. In The International AAAI Conference on Web and Social Media (ICWSM), 2022.\\
-&[11]. \textbf{Ling, C.}, Blackburn, J., De Cristofaro, E., \& Stringhini, G. (2022, June), Slapping Cats, Bopping Heads, and Oreo Shakes: Understanding Indicators of Virality in TikTok Short Videos. In 14th ACM Web Science Conference 2022 (pp. 164-173).\\
-&[10]. \textbf{Ling, C*.}, Utku, B*., Blackburn, J., Stringhini, G. (2022), A First Look at Zoombombing. In IEEE Security \& Privacy Magazine, 2021.\\
-&[9]. \textbf{Ling, C*.}, Utku, B*., Blackburn, J., Stringhini, G. (2021), \href{https://arxiv.org/pdf/2009.03822.pdf}{A First Look at Zoombombing.} In 42nd IEEE Symposium on Security and Privacy, 2021. \href{https://www.youtube.com/watch?v=9LSvxtqe38c}{[Video Presentation]}\\
-&\color{OliveGreen}{Media Coverage}: [\href{https://www.newscientist.com/article/2255550-most-zoombombing-is-not-done-by-external-hackers-theyre-inside-jobs/}{New Scientist}]
-[\href{https://www.wired.com/story/zoombomb-inside-jobs/}{Wired}]
-[\href{https://www.eurekalert.org/pub_releases/2021-02/bu-rs020121.php}{Eurek Alert}]
-[\href{https://arstechnica.com/information-technology/2021/02/zoombombing-countermeasures-are-ineffective-in-the-vast-majority-of-cases/}{Arstechnica}]
-[\href{https://www.insidehighered.com/news/2021/02/17/college-zoombombing-incidents-often-incited-students?utm_source=Inside+Higher+Ed&utm_campaign=8d72a05de8-DNU_2021_COPY_02&utm_medium=email&utm_term=0_1fcbc04421-8d72a05de8-198556833&mc_cid=8d72a05de8&mc_eid=5bccd444e8}{Inside Higher Ed}]\\
-
-
-&[8]. \textbf{Ling, C.}, AbuHilal, I., Blackburn, J., Cristofaro, E., Zannettou. S., Stringhini, G., 
-\href{https://arxiv.org/pdf/2101.06535}{Dissecting the Meme Magic: Understanding Indicators of Virality in Image Memes}. In 23rd ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2021.\\
-&\color{OliveGreen}{Media Coverage}:
-[\href{https://www.inputmag.com/culture/viral-meme-ai-study-bernie-sanders}{Input Magazine}]
-[\href{http://www.bu.edu/articles/2021/bernie-sanders-sitting-memes-instant-popularity-explained-by-science/?utm_source=twitter&utm_medium=link&utm_content=research_computerscience&utm_campaign=social_experts}{The Brink}]\\
-
-&[7]. F Tahmasbi, Schild, L., \textbf{Ling, C.}, Blackburn, J., Stringhini, G., Zhang, Y., \& Zannettou, S. (2020). \href{https://arxiv.org/pdf/2004.04046.pdf}{" Go eat a bat, Chang!": An Early Look on the Emergence of Sinophobic Behavior on Web Communities in the Face of COVID-19.} In the Web Conference (WWW), 2021.\\
-&\color{OliveGreen}{Media Coverage}: [\href{https://www.washingtonpost.com/technology/2020/04/08/coronavirus-spreads-so-does-online-racism-targeting-asians-new-research-shows/}{The Washington Post1}][\href{https://www.washingtonpost.com/technology/2021/02/12/china-covid-misinformation-li-meng-yan/}{The Washington Post2}]\\
-
-&[6]. \textbf{Ling C.}, \& Stringhini G. (2020, July). \href{https://seclab.bu.edu/people/gianluca/papers/sulli-cysoc2020.pdf}{Examining the Impact of Social Distance on Reactions Towards Sulli’s Death on Twitter.} In Workshop on Cyber Social Threats (CySoc), 2020.\\
-
-&[5]. Hong Y., \textbf{Ling C.}, \& Ye Z. (2018, April). \href{https://ieeexplore.ieee.org/abstract/document/8369043}{End-to-end soccer video scene and event classification with deep transfer learning.} In 2018 International Conference on Intelligent Systems and Computer Vision (ISCV) (pp. 1-4). IEEE.\\
-
-&[4]. \textbf{Ling C.} (2018). \href{https://pdf.hanspub.org//AP20181100000_50259940.pdf}{Intouchable prophecy: Enlightenment from The Nature of Prejudice in the Digital Age.} Advance in Psychology, 8(11), 1651-1656. https://doi.org/10.12677/AP.2018.811191\\
-
-& \textbf{Translated Books}\\
-
-& [3]. Sakamoto, P. R. (2021), \href{https://book.douban.com/subject/35476851/}{Midnight in Broad Daylight: a Japanese American family caught between two worlds. }(\textbf{C. Ling}, Trans). Shanghai: Sanlian. (Original work published 2016).\\
-
-& [2]. Gordon W. Allport (2020), \href{https://book.douban.com/subject/35220441/?icn=index-topchart-subject}{The Nature of Prejudice} \textbf{(C. Ling}, Trans). Beijing: Hina. (Original work published in 1954).\\
-&\color{OliveGreen}{Media Coverages}:
-[\href{https://www.thepaper.cn/asktopic_detail_10019723}{The Paper}]\\
-
-& [1]. Jamie James (2019), \href{https://book.douban.com/subject/35220441/?icn=index-topchart-subject}{Pop Art} \textbf{(C. Ling}, Trans). Beijing: Hina. (Original work published in 1954).\\
-
-
-% --- Section: Research experience ---
-
-% \nohyphens{\color{OliveGreen}{Research Experience}} 
-% & \textbf{Title of project or lab where research was conducted} \\
-% & Mentors: Professor A (University) \hfill Month Year -- Present \\
-% & Description of your work. Summary of findings available \href{https://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{here}. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. Integer pretium semper justo. \\
-% & \\
-
-% & \textbf{Title of project or lab where research was conducted} \\
-% & Mentors: Professor B (University) \hfill Month Year -- Present \\
-% & This description of your work might spill onto the next page, which is fine. \hfill $\rightarrow$ \\
-% & Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. Integer pretium semper justo. Proin risus. \\
-% & \\
-
-% --- Section: Invited Talks ---
-{\color{OliveGreen}{Invited Talks}} 
-
-& \href{https://www.youtube.com/watch?v=JB6-rnlVD6g&t=8s}{\textbf{Digitally Speaking: The Perks \& Perils of 2021, Zoombombing part, }} {In the Friday Power Lunch (5-14-2021) by Network NOVA, 2021.}\\
-
-& \href{https://www.bilibili.com/video/BV1py4y1b7d8?from=search&seid=10583162510465884129}{\textbf{Prejudice and Ignorance, }} {In The Neureality, 2021.}\\
-
-& \href{https://www.youtube.com/watch?v=Np50JrIVr1A&t=5756s}{\textbf{Dissecting the Meme Magic: Understanding Indicators of Virality in Image Memes, }} {In The Hmm @ IMPAKT, 2021.}\\
-
-& \textbf{Examining the Impact of Social Distance on Reactions Towards Sulli’s Death on Twitter, } {In Workshop on Cyber Social Threats (CySoc), 2020.}\\
-
-{\color{OliveGreen}{Service}} 
-& \textbf{Reviewer, }{ICWSM} \hfill 2021, 2022 \\
-& \textbf{Reviewer, }{CSCW} \hfill 2021, 2022 \\
-& \textbf{Reviewer, }{Journal of Business Research} \hfill 2021 \\
-& \textbf{Mentor, }{Graduate Women in Science and Engineering (GWISE)} \hfill 2020, 2021\\
-
-% --- Section: Research ---
-
-\color{OliveGreen}{Experience} 
-& \textbf{Visiting Scholar,} Max-Planck-Institute for Informatics \hfill 2021 \\ 
-& Research Group Internet Architecture (INET) \hfill Saarbrücken, Germany \\
-& Advisor: Prof. Anja Feldmann, Prof. Krishna Gummadi, Dr. Savvas Zannettou\\
-
-& \textbf{Research Assistant,} Beijing Normal University \hfill 2017 -- 2018 \\
-& Institute of Developmental Psychology \hfill Beijing, China\\
-& Advisor: Prof. Xiaoyi Fang\\
-
-& \textbf{Trading Analyst} \hfill 2015 -- 2017 \\
-& SGX \hfill Singapore\\
-
-% --- Section: Teaching experience ---
-
-{\color{OliveGreen}{Teaching}} 
-% & \textbf{Teaching Assistant } \hfill Fall 2021 \\
-% & EC 521: Cybersecurity, Boston University \\
-& \textbf{Teaching Assistant } \hfill Fall 2021 \\
-& EK 103: Computational Linear Algebra, Boston University \\
-
-& \textbf{Teaching Assistant } \hfill Fall 2020 \\
-& EC 521: Cybersecurity, Boston University \\
-
-
-% {\color{OliveGreen}{Service}} 
-% & {External Reviewer, CSCW} \hfill 2021 \\
-% & Topics and description of your responsibilities. Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \\
-% & \textit{Average student rating: X/5.} \\
-% & \\
-
-% & \textbf{Teaching assistant, Department of Subject (University)} \hfill Spring 2020 \\
-% & STAT 234: Name of course here \\
-% & Topics and description of your responsibilities. Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \\
-% & \textit{Average student rating: X/5.} \\
-% & \\
-
-% & \textbf{Teaching assistant, Department of Subject (University)} \hfill Spring 2020 \\
-% & STAT 345: Name of course here \\
-% & Topics and description of your responsibilities. Aliquam volutpat est vel massa. \\
-% & \textit{Average student rating: X/5.} \\
-% & \\
-
-% --- Section: Industry experience ---
-
-% {\color{OliveGreen}{Industry Experience}} 
-% & {\textbf{Boston Consulting Company,}} Division of company \hfill Beijing, China\\
-% & Title of job or internship \hfill Summer 2020 \\
-% & Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque.\\
-% & \\
- 
-% & {\textbf{Six Capital,}} Division of company \hfill Singapore\\
-% & Title of job or internship \hfill Summer 2020 \\
-% & Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque.\\
-% & \\
+% My research interests are broadly in the areas of security, privacy, and human-computer interaction.
+% My research aims to better understand and mitigate online abusive behavior using multi-modal, multi-platform, and mixed-method approaches.
+% My work has been published in top-tier journals and conferences, including{ \href{https://www.computer.org/csdl/proceedings-article/sp/2021/893400b047/1t0x8Vq5Zde}{IEEE S\&P}},{ \href{https://dl.acm.org/doi/abs/10.1145/3449155}{ACM CSCW}},{ \href{https://ojs.aaai.org/index.php/ICWSM/article/view/22168}{AAAI ICWSM}}, and has been reported by{ \href{https://www.wired.com/story/zoombomb-inside-jobs/}{Wired}, { \href{https://www.newscientist.com/article/2255550-most-zoombombing-is-not-done-by-external-hackers-theyre-inside-jobs/}{New Scientist}}, and{ \href{https://www.washingtonpost.com/technology/2020/04/08/coronavirus-spreads-so-does-online-racism-targeting-asians-new-research-shows/}{The Washington Post}}. 
+% I am the recipient of the{ \href{https://research.facebook.com/fellows/ling-cheng/}{2022 Meta PhD fellowship}} in Security and Privacy,{ \href{https://www.bu.edu/hic/profile/chen-ling/}{a Hariri student Fellow}} at Boston University, and was a visiting scholar at Max Planck Institute supported by a fellowship.
 
 
 
-% & \textbf{Title of your second most recent presentation} \hfill Month Year \\
-% & Name of conference, workshop, seminar, venue, etc., or a description \\
-% & \\
+\medskip
 
-% --- Section: Various skills (programming, software, languages, etc.) ---
+% \end{rSection}
+% \medskip
+% \clearpage
+% \begin{rSection}{Positions}
+% \item \textbf{Indiana University Bloomington}\\
+% Assistant Professor \hfill 2024 - present\\
+% Luddy School of Informatics, Computing, and Engineering \hfill Bloomington, Indiana
+% \item \textbf{Boston University}\\
+% The Security Lab\\
+% Research Assistant \hfill 2019 – 2024
+% \\Advisor: Prof. Gianluca Stringhini \hfill Boston, USA
 
-% {\color{OliveGreen}{Skills}} 
-% & \textbf{Programming}: Python\\
-% & Proficient in: programming language 1, programming language 2. \\
-% & Familiar with: programming language 3, programming language 4. \\
-% & \\
+% \item \textbf{Max-Planck-Institute for Informatics}\\ 
+% Research Group Internet Architecture (INET) \\
+% Visiting Scholar 
+% \hfill 2021
+% \\Advisor: Prof. Krishna Gummadi, Prof. Savvas Zannettou
+% \hfill Saarbr{\"u}cken, Germany
 
-% & \textbf{Languages} \\
-% & Language 1 (fluent), Language 2 (advanced) \\
-% & \\
+% \item \textbf{Beijing Normal University}\\
+% Institute of Developmental Psychology\\
+% Research Assistant \hfill 2017 – 2018
+% \\Advisor: Prof. Xiaoyi Fang \hfill Beijing, China
+% % \item \textbf{Six Capital} \hfill 2015 - 2017
+% % \\Trading Analyst \hfill Singapore
 
-% --- Section: Service and outreach ---
+% \end{rSection}
 
-% \color{OliveGreen}{Service and outreach}
-% & \textbf{Title of organization you were in} \hfill Month Year -- Month Year \\
-% & Description of your responsibilities. Integer pretium semper justo. Proin risus. Aliquam volutpat est vel massa. \\
-% & \\
 
-% % --- Section: Professional society memberships ---
-% % --- Note: section title is spread over two lines ---
+\begin{rSection}{Education \& Training}
+\item \textbf{Ph.D., Computer Engineering} \hfill Sep. 2019 - May 2024
+\\Boston University \hfill Boston, MA\\
+% \\{Advisor: Gianluca Stringhini}
+{Advisor: Prof. Gianluca Stringhini}
 
-% {\color{OliveGreen}{Professional}} 
-% & {\textbf{Name of professional society.}} \hfill Month Year -- Present \\
-% {\color{OliveGreen}{memberships}} 
-% & Some things you did or conferences you attended. Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \\
-% & \\
+\item \textbf{Visiting Scholar}\\ 
+Max Planck Institute for Informatics \hfill 2021\\
+Research Group Internet Architecture (INET) \hfill Saarbr{\"u}cken, Germany
+\\Advisor: Prof. Krishna Gummadi, Prof. Savvas Zannettou
 
-% % --- Section: Other interests/hobbies ---
 
-% \nohyphens{\color{OliveGreen}{Other interests}} & Some of your hobbies etc.\\
+\item \textbf{M.S., Computer Science} \hfill May 2018 - Aug. 2019
+\\University of Illinois Urbana-Champaign \hfill Urbana, IL
 
-% --- End of CV! ---
+\item \textbf{Research Assistant}\\
+Beijing Normal University\hfill 2017 – 2018\\
+Institute of Developmental Psychology\hfill Beijing, China
+\\Advisor: Prof. Xiaoyi Fang 
 
-\end{longtable}
+\item \textbf{B.A., Art History} \hfill Aug. 2011 - Jul. 2015
+\\Tsinghua University \hfill Beijing, China
+\end{rSection}
+
+\medskip
+
+\begin{rSection}{Grants \& Awards}
+\item IEEE S\&P 2024 Student Travel Grant (\$1,200) \hfill 2024
+\item SWE Student Travel Grant \hfill  2023
+\item EECS Rising Star (selection rate: 101/288 = 35\%) \hfill 2023\\
+\href{https://eecsrisingstars2023.cc.gatech.edu/participants/Chen_Ling/}{[Media Coverage]}
+\item Meta PhD Research Fellowship (\$84,000, selection rate: 37/2300 = 1.6\%) \hfill  2022 - 2024\\
+\href{https://research.facebook.com/fellows/ling-cheng/}{[Media Coverage]}
+\item ACM Web Science Conference Registration Grant (\$150) \hfill 2023
+\item IEEE S\&P Student Registration Grant (\$150) \hfill 2021
+\item  Instagram Research Awards (Co-PI, \$50,000) \hfill  2021\\
+% Instagram research awards on safety and community health:\\ 
+Towards proactive moderation of coordinated harassment on Instagram\\
+\href{https://research.facebook.com/blog/2021/12/announcing-the-recipients-of-instagram-research-awards-on-safety-and-community-health/}{[Media Coverage]}
+\item 
+Hariri Graduate Student Fellowship (\$6,300) \hfill 2021\\
+\href{https://www.bu.edu/hic/profile/chen-ling/}{[Media Coverage]} 
+\item Max Planck Institute Fellowship (\$5,000) \hfill 2021
+\item Boston University Distinguished Computer Engineering Fellowship (\$37,000) \hfill 2019
+\item National Undergraduate Academic Science and Technology Race Challenge
+Cup Award (\$1,500) \hfill 2015
+\item Tsinghua Scholarship for Comprehensive Excellence (\$1,000) \hfill 2014
+\item Tsinghua X-lab Entrepreneurship Fund (\$7,500) \hfill 2014
+\item Tsinghua Student Research Training Program Grant (\$2,000) \hfill 2012, 2013
+\item National Innovation and Entrepreneurship Association (\$1,500) \hfill 2011
+\end{rSection}
+
+% \begin{rSection}{Grants \& Awards}
+% \item ACM Web Science Conference Registration Grant (\$150) \hfill 2023
+
+% \item IEEE S\&P Student Registration Grant (\$150) \hfill 2021
+% \item National Undergraduate Academic Science and Technology Race Challenge
+% Cup Award (\$1,500) \hfill 2015
+% \item Tsinghua Scholarship for Comprehensive Excellence (\$1,000) \hfill 2014
+% \item National Innovation and Entrepreneurship Association (\$1,500) \hfill 2011
+% \end{rSection}
+
+\medskip
+
+% {\color{mediumblue} \MakeUppercase{\textbf{ \huge Publications } } }
+
+% conference pub
+\MakeUppercase{\textbf{Peer Reviewed Publications}} (* = equal contribution)
+\sectionlineskip
+\renewcommand{\labelenumi}{\padzeroes[2]{\decimalnum{\theenumi}}.}
+\hrule height .7pt % Horizontal line
+\begin{etaremune}[leftmargin=.6in]
+
+    \item \paperabbrev{USENIX Security '24} Paudel, P., \textbf{Ling, C.}, Blackburn, J., and Stringhini, G.
+     \newline \textit{PIXELMOD: Improving Soft Moderation of Visual Misleading Information on Twitter.}
+     \newline USENIX Security Symposium, 2024.
+     
+    \item \paperabbrev{CSCW '23} Wang, Y., \textbf{Ling, C.}, and Stringhini, G.
+     \newline \textit{Understanding the Use of Images to Spread COVID-19 Misinformation on Twitter.}
+     \newline Proceedings of the ACM on Human-Computer Interaction, 7(CSCW), 2023.
+     \newline [\href{https://dl.acm.org/doi/pdf/10.1145/3579542}{Paper}]
+
+     \item \paperabbrev{CSCW '23} Ali, S., Razi, A., Kim, S., \textbf{Ling, C.}, De Choudhury Munmun, Wisniewski, P. J., and Stringhini, G.
+    \newline \textit{Getting Meta: A Multimodal Approach for Detecting Unsafe Conversations within Instagram Direct Messages of Youth.}
+    \newline Proceedings of the ACM on Human-Computer Interaction, 7(CSCW), 2023. 
+    \newline [\href{https://seclab.bu.edu/people/gianluca/papers/risks-cscw2023.pdf}{Paper}]
+    
+    \item \textbf{[EuroS\&P '23]} 
+    Singhal, M., \textbf{Ling, C.}, Kumarswamy, N., Stringhini, G., and Nilizadeh, S.
+    \newline \textit{SoK: content moderation in social media, from guidelines to enforcement, and research to practice.}
+    \newline IEEE European Symposium on Security and Privacy, 2023 
+    \newline [Acceptance rate: 29\%]
+    \newline [\href{https://arxiv.org/pdf/2206.14855}{Paper}]
+    
+    \item \textbf{[WebSci '23]} Balci, U., \textbf{Ling, C.}, Squire, M., De Cristofaro, E., Stringhini, G., and Blackburn, J.
+    \textit{Beyond Fish and Bicycles: Exploring the Varieties of Online Women's Ideological Spaces.} 
+    \newline The 15th ACM Web Science Conference, 2023. 
+    \newline [Acceptance rate: 30\%]
+    \newline [\href{https://arxiv.org/pdf/2303.07099.pdf}{Paper}]
+
+    \item \paperabbrev{ICWSM '23} 
+    \textbf{Ling, C.}, K. P. Gummadi, and S. Zannettou.
+    \newline \textit{``Learn the Facts About COVID-19'': Analyzing the Use of Warning Labels on TikTok Videos.} 
+    \newline The International AAAI Conference on Web and Social Media (ICWSM), 2022.
+    \newline [Acceptance rate: 20\%]
+    \newline [\href{https://arxiv.org/pdf/2201.07726.pdf}{Paper}]
+    
+    \item \textbf{[WebSci '22]} 
+    \textbf{Ling, C.}, J. Blackburn, E. De Cristofaro, and G. Stringhini. 
+    \newline \textit{Slapping Cats, Bopping Heads, and Oreo Shakes: Understanding Indicators of Virality in TikTok Short Videos.} 
+    \newline The 14th ACM Web Science Conference, 2022.
+    \newline [Acceptance rate: 30\%]
+    \newline Media Coverage: [\href{https://www.zdnet.com/article/tiktok-doesnt-read-your-mind-it-makes-your-mind/}{ZDNet}]
+    \newline [\href{https://arxiv.org/pdf/2111.02452.pdf}{Paper}]
+\clearpage
+      
+    \item \textbf{[WWW '21]}
+     F. Tahmasbi, L. Schild, \textbf{Ling, C.}, J. Blackburn, G. Stringhini, Y. Zhang, and S. Zannettou. 
+     \newline \textit{``Go eat a bat, Chang!'': An Early Look on the Emergence of Sinophobic Behavior onWeb Communities in the Face of COVID-19.}
+     \newline Proceedings of the ACM Web Conference, 2021. 
+     \newline [Acceptance rate: 17.7\%]
+     \newline Media Coverage: [\href{https://www.washingtonpost.com/technology/2020/04/08/coronavirus-spreads-so-does-online-racism-targeting-asians-new-research-shows/}{The Washington Post 1}][\href{https://www.washingtonpost.com/technology/2021/02/12/china-covid-misinformation-li-meng-yan/}{The Washington Post 2}]
+     \newline [\href{https://dl.acm.org/doi/pdf/10.1145/3442381.3450024}{Paper}]
+    \item \textbf{[S\&P '21]} 
+    \textbf{Ling, C.*}, B. Utku*, J. Blackburn, and G. Stringhini. 
+    \newline \textit{A First Look at Zoombombing.} 
+    \newline The 42nd IEEE Symposium on Security and Privacy, 2021. 
+    \newline [Acceptance rate: 12.08\%]
+    \newline Media Coverage: [\href{https://www.newscientist.com/article/2255550-most-zoombombing-is-not-done-by-external-hackers-theyre-inside-jobs/}{New Scientist}][\href{https://www.wired.com/story/zoombomb-inside-jobs/}{Wired}][\href{https://www.eurekalert.org/news-releases/719104}{Eurek Alert}][\href{https://arstechnica.com/information-technology/2021/02/zoombombing-countermeasures-are-ineffective-in-the-vast-majority-of-cases/}{Arstechnica}][\href{https://www.insidehighered.com/news/2021/02/17/college-zoombombing-incidents-often-incited-students?utm_source=Inside+Higher+Ed&utm_campaign=8d72a05de8-DNU_2021_COPY_02&utm_medium=email&utm_term=0_1fcbc04421-8d72a05de8-198556833&mc_cid=8d72a05de8&mc_eid=5bccd444e8}{Inside Higher Ed}]\\
+    \noindent[\href{https://www.helpnetsecurity.com/2021/02/09/most-zoombombing-incidents-are-inside-jobs/}{Help Net Security}][\href{https://www.publicsource.org/racist-zoom-bombing-pa-hate-what-to-do/}{Public Source}][\href{https://www.forbes.com/sites/forbestechcouncil/2022/03/28/video-security-is-more-than-just-security---its-about-brand-integrity-and-your-customer-commitments/?sh=2d79f93b663d}{Forbes}]
+    \newline
+    [\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9519457}{Paper}] [\href{https://www.youtube.com/watch?v=9LSvxtqe38c}{Video Presentation}]
+    
+  \item \textbf{[S\&P Magazine '22]} 
+    \textbf{Ling, C.*}, Utku, B.*, J. Blackburn, and G. Stringhini.
+    \newline \textit{A First Look at Zoombombing.}
+    \newline IEEE Security \& Privacy Magazine, 2022. \textbf{\textcolor{orange}{Invited Submission.}}
+     \newline [\href{https://www.computer.org/csdl/magazine/sp/2022/02/09638984/1z98wsr8mQw}{Paper}]
+
+    
+    \item \textbf{[CSCW '21]}
+   \textbf{Ling, C.}, I. AbuHilal, E. De Cristofaro, S. Zannettou, and G. Stringhini.
+   \newline \textit{Dissecting the Meme Magic: Understanding Indicators of Virality in Image Memes.} 
+   \newline The 23rd ACM Conference on Computer-Supported Cooperative Work and Social Computing, 2021. 
+   \newline Media Coverage: [\href{https://www.inverse.com/input/culture/viral-meme-ai-study-bernie-sanders}{Input Magazine}][\href{https://www.bu.edu/articles/2021/bernie-sanders-sitting-memes-instant-popularity-explained-by-science/?utm_source=twitter&utm_medium=link&utm_content=research_computerscience&utm_campaign=social_experts}{The Brink}] 
+   \newline [\href{https://dl.acm.org/doi/pdf/10.1145/3449155}{Paper}] 
+    
+    \item \textbf{[CySoc '20]}
+    \textbf{Ling, C.} and G. Stringhini. 
+    \newline \textit{Examining the Impact of Social Distance on Reactions Towards Sulli’s Death on Twitter.}
+    \newline Workshop on Cyber Social Threats, ICWSM 2020. 
+    \newline [\href{https://workshop-proceedings.icwsm.org/pdf/2020_15.pdf}{Paper}]
+    
+    \item \textbf{[ISCV '18]}
+    Y. Hong, \textbf{Ling, C.} and Z. Ye. 
+    \newline \textit{End-to-end soccer video scene and event classification with deep transfer learning.} 
+    \newline International Conference on Intelligent Systems and Computer Vision (ISCV), 2018. 
+    \newline [\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8369043}{Paper}]
+
+    \item \textbf{[Advance in Psychology]}
+    \textbf{Ling, C.}. 
+    \newline \textit{Intouchable prophecy: Enlightenment from The Nature of Prejudice in the Digital Age.} 
+    \newline Advance in Psychology, 8(11), 1651-1656, 2018. \newline[\href{https://doi.org/10.12677/AP.2018.811191}{Paper}]
+\end{etaremune}
+
+\medskip
+
+% \MakeUppercase{\textbf{Journal Publications}} (* = equal contribution)
+% \sectionlineskip
+% \renewcommand{\labelenumi}{J\padzeroes[2]{\decimalnum{\theenumi}}.}
+% \hrule % Horizontal line
+% \begin{etaremune}[leftmargin=.6in]
+%      \item \paperabbrev{CSCW '23} Wang, Y., \textbf{Ling, C.}, and Stringhini, G.
+%      \newline \textit{Understanding the Use of Images to Spread COVID-19 Misinformation on Twitter.}
+%      \newline Proceedings of the ACM on Human-Computer Interaction, 7(CSCW), 2023.
+%      \newline [\href{https://dl.acm.org/doi/pdf/10.1145/3579542}{Paper}]
+     
+%      \item \paperabbrev{CSCW '23} Ali, S., Razi, A., Kim, S., \textbf{Ling, C.}, De Choudhury M. U. N. M. U. N., Wisniewski, P. J., and Stringhini, G.
+%     \newline \textit{Getting Meta: A Multimodal Approach for Detecting Unsafe Conversations within Instagram Direct Messages of Youth.}
+%     \newline Proceedings of the ACM on Human-Computer Interaction, 7(CSCW), 2023. 
+%     \newline [\href{https://seclab.bu.edu/people/gianluca/papers/risks-cscw2023.pdf}{Paper}]
+    
+%     \item \textbf{[S\&P Magazine '22]} 
+%     \textbf{C. Ling*}, B. Utku*, J. Blackburn, and G. Stringhini.
+%     \newline \textit{A First Look at Zoombombing.}
+%     \newline IEEE Security \& Privacy Magazine, 2022.
+%      \newline [\href{https://www.computer.org/csdl/magazine/sp/2022/02/09638984/1z98wsr8mQw}{Paper}]
+    
+%    \item \textbf{[CSCW '21]}
+%    \textbf{C. Ling}, I. AbuHilal, E. De Cristofaro, S. Zannettou, and G. Stringhini.
+%    \newline \textit{Dissecting the Meme Magic: Understanding Indicators of Virality in Image Memes.} 
+%    \newline The 23rd ACM Conference on Computer-Supported Cooperative Work and Social Computing, 2021. 
+%    \newline Media Coverage: [\href{https://www.inverse.com/input/culture/viral-meme-ai-study-bernie-sanders}{Input Magazine}][\href{https://www.bu.edu/articles/2021/bernie-sanders-sitting-memes-instant-popularity-explained-by-science/?utm_source=twitter&utm_medium=link&utm_content=research_computerscience&utm_campaign=social_experts}{The Brink}] 
+%    \newline [\href{https://dl.acm.org/doi/pdf/10.1145/3449155}{Paper}] 
+    
+%     \item \textbf{[Advance in Psychology]}
+%     \textbf{C. Ling}. 
+%     \newline \textit{Intouchable prophecy: Enlightenment from The Nature of Prejudice in the Digital Age.} 
+%     \newline Advance in Psychology, 8(11), 1651-1656, 2018. \newline[\href{https://doi.org/10.12677/AP.2018.811191}{Paper}]
+% \end{etaremune}
+
+\medskip
+
+\begin{rSection}{Invited Talks}
+\textbf{Managing the Shift in Phishing Attack to Telephone Based Phishing}\\
+Panelist, APWG eCrime 2024, Boston, (Sept, 2024.)\\ 
+
+\item 
+\textbf{Go Viral and Go Toxic: the Use and Abuse of Social Media }\\
+Workshop of 2023 EECS Rising Star, Gatech, (Nov, 2023.)\\
+Security Privacy Interaction Lab, University of Michigan, (Nov, 2023.)\\
+% University of Texas, San Antonio, (Jan, 2024)\\
+% University of Mississippi, (Jan, 2024)\\
+% University of Louisiana, (Jan, 2024)\\
+% University of Wyoming, (Jan, 2024)\\
+% CISPA, (Feb, 2024.)\\
+% NYU Shanghai, (Feb, 2024.)\\
+% NYU Tandon, (Mar, 2024.)\\
+% Arizona State University, (Mar, 2024.)\\
+% University of Houston, (Mar, 2024)\\
+% Indiana University Bloomington, (Mar, 2024.)
+\item 
+
+
+\item 
+\textbf{Digitally Speaking: The Perks \& Perils, Zoombombing.}\\
+ The Friday Power Lunch (5-14-2021) by Network NOVA, (May, 2021.)\\
+\href{https://www.youtube.com/watch?v=JB6-rnlVD6g&t=8s}{[Recording]} 
+\item 
+\textbf{Prejudice and Ignorance.}\\
+Panelist, The Neureality, (Apr, 2021.)\\
+\href{https://www.bilibili.com/video/BV1py4y1b7d8/}
+{[Recording]} 
+\item 
+\textbf{Dissecting the Meme Magic: Understanding Indicators of Virality in Image Memes.}\\
+The Hmm @ IMPAKT, (Feb, 2021.)\\
+\href{https://impakt.nl/events/2021/conversation/the-hmm-impakt/}{[Recording]}
+% \item 
+% \textbf{[Paper Talk]}\\
+% Examining the Impact of Social Distance on Reactions Towards Sulli’s
+% Death on Twitter.\\
+% Workshop on Cyber Social Threats (CySoc), (Jun, 2020)\\
+\end{rSection}
+
+\medskip
+
+\begin{rSection}{Teaching}
+\item \textbf{INFO-I130: Introduction to Cybersecurity, }Indiana University\hfill Fall 2024
+\\Instructor, class size = 50
+\item \textbf{EK 103: Computational Linear Algebra, }Boston University \hfill Fall 2021
+\\Teaching Assistant, class size = 84
+\item \textbf{EC 521: Cybersecurity, }Boston University \hfill Fall 2020
+\\Teaching Assistant, class size = 41
+\end{rSection}
+
+\medskip
+
+
+\begin{rSection}{Mentorship and Supervision}
+\item \textbf{PhD Students}\\
+Muwu Shan.
+\hfill 2024 -\\
+Weihong Qi, PhD rotation. 
+\hfill 2024 -
+\item \textbf{BS Students}\\
+Anushka Dave.
+\hfill 2024 -\\
+Chuck Griffin Segal.
+\hfill 2024 -\\
+Dominic J Theodoropoulos.
+\hfill 2024 -\\
+Luis Abrego.
+\hfill 2024 -\\
+
+\end{rSection}
+
+\medskip
+
+\begin{rSection}{Service}
+\item \textbf{PC Member} CCS \hfill 2024
+\item \textbf{PC Member} Euro S\&P \hfill 2024
+\item \textbf{Reviewer} Journal of Big Data \hfill 2024
+\item \textbf{Reviewer} Scientific Reports \hfill 2024
+\item \textbf{Reviewer} Injury Epidemiology \hfill 2024
+\item \textbf{Reviewer} Knowledge and Information Systems \hfill 2024
+\item \textbf{Reviewer} Social Network Analysis and Mining \hfill 2024
+\item \textbf{Reviewer} IC2S2 \hfill 2024
+\item \textbf{Reviewer} CHI \hfill 2024
+\item \textbf{Reviewer} Telematics and Informatics Reports \hfill 2024
+\item \textbf{PC Member} ICWSM \hfill 2023 -  current
+\item \textbf{Reviewer} ICWSM \hfill 2022 - current
+\item \textbf{Reviewer} CSCW \hfill 2021 - current
+\item \textbf{PC Member} Truth \& Trust Online Conference (TTO) \hfill 2022
+\item \textbf{Reviewer} Asia Pacific Journal of Education \hfill 2022
+\item \textbf{Reviewer} Journal of Business Research \hfill 2021
+\item \textbf{Mentor} Graduate Women in Science and Engineering (GWISE) 
+\hfill 2020 - 2024
+\end{rSection}
+
+\medskip
+
+\begin{rSection}{Translated Books}
+\item Deesha Philyaw (2023), 
+(\textbf{C. Ling}, Trans).\\
+\textit{The Secret Lives of Church Ladies}\\
+Hunan Literature and Art Publishing House. (Original work was published in 2020.)
+\newline[\href{https://book.douban.com/subject/36504518/}{Book}]
+
+\item Sakamoto, P. R. (2021), 
+(\textbf{C. Ling}, Trans).\\
+\textit{Midnight in Broad Daylight: a Japanese American family caught between two worlds}\\
+Shanghai: Sanlian. (Original work was published in 2016.)
+\newline[\href{https://book.douban.com/subject/35476851/}{Book}]
+
+\item Gordon W. Allport (2020), (\textbf{C. Ling}, Trans). \\
+\textit{The Nature of Prejudice}\\
+Beijing: Hina. (Original work was published in 1954).
+\newline[\href{https://book.douban.com/subject/35220441/}{Book}]
+
+\item Jamie James (2019), (\textbf{C. Ling}, Trans).\\
+\textit{Pop Art }\\
+Beijing: Hina. (Original work was published in 1996).
+\newline[\href{https://book.douban.com/subject/30291202/}{Book}]
+
+
+% \clearpage
+
+
+% \begin{rSection}{References}
+% \item \textbf{Professor Gianluca Stringhini}\\
+% Associate Professor, Department of Electrical and Computer Engineering, Boston University\\
+% 8 St. Mary’s Street Boston, MA 02215, Room 331\\
+% gian@bu.edu\\
+
+% \item \textbf{Professor Jeremy Blackburn}\\
+% Associate Professor, Department of Computer Science, Binghamton University\\
+% Binghamton University, State University of New York,
+% Binghamton, NY 13900, EB N10\\
+% jblackbu@binghamton.edu\\
+
+% \item \textbf{Professor Emiliano De Cristofaro}\\
+% Professor, Computer Science \& Engineering Department, University of California, Riverside
+% \\
+% 351 Winston Chung Hall, University of California Riverside, CA 92521
+% \\
+% emiliano.decristofaro@ucr.edu\\
+% \end{rSection}
+\end{rSection}
 \end{document}
